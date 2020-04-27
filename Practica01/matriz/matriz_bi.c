@@ -1,7 +1,7 @@
 #include "matriz.h"
 
 /*
-** Implmentacion utilizando un unico arreglo unidimensional
+** Implementacion utilizando un arreglo bidimensional (arreglo de punteros a arreglo)
 */
 
 struct Matriz_ {
@@ -34,3 +34,5 @@ size_t matriz_num_filas(Matriz* matriz) {
 size_t matriz_num_columnas(Matriz* matriz) {
 
 }
+
+
