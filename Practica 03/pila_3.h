@@ -27,12 +27,12 @@ int pila_ultimo(Pila pila);
 /*
     toma una pila y un elemento y agrega el elemento a la pila
 */
-void pila_apilar(Pila pila, int dato);
+void pila_apilar(Pila *pila, int dato);
 
 /*
     Toma una pila y elimina el elemento de la cima
 */
-void pila_desapilar(Pila pila);
+void pila_desapilar(Pila *pila);
 
 /*
     Toma una pila y la imprime en orden

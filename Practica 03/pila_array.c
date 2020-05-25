@@ -1,5 +1,10 @@
 #include "pila.h"
 
+struct _Pila {
+    int datos[MAX_PILA];
+    int ultimo;
+};
+
 Pila pila_crear() {
     Pila pila = malloc(sizeof(SPila));
     pila->ultimo = -1;
@@ -24,12 +29,11 @@ void pila_desapilar(Pila pila) {
 }
 
 void pila_imprimir(Pila pila) {
-    for (size_t i = 0; i < pila->ultimo; i++) {
+    for (size_t i = 0; i <= pila->ultimo; i++) {
         printf("%d\n", pila->datos[i]);
     }
 }
 
 void pila_destruir(Pila pila) {
-    free(pila->datos);
     free(pila);
 }
