@@ -1,3 +1,6 @@
 [submodule "tp1-estructuras1"]
 	path = tp1-estructuras1
 	url = https://github.com/IgnacioKase/tp1-estructuras1.git
+[submodule "tp2-estructuras1"]
+	path = tp2-estructuras1
+	url = https://github.com/IgnacioKase/tp2-estructuras1.git
