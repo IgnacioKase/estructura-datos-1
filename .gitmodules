@@ -4,3 +4,6 @@
 [submodule "tp2-estructuras1"]
 	path = tp2-estructuras1
 	url = https://github.com/IgnacioKase/tp2-estructuras1.git
+[submodule "tpfinal-estructuras1"]
+	path = tpfinal-estructuras1
+	url = https://github.com/IgnacioKase/tpfinal-estructuras1
