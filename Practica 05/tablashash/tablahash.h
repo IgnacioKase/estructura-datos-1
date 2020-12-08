@@ -5,29 +5,31 @@
  * Tipo de las funciones hash a ser consideradas por las tablas hash.
  */
 typedef unsigned (*FuncionHash)(void* clave);
+typedef int (*FuncionIgualdad)(void*, void*);
 
 /**
  * Casillas en la que almacenaremos los datos de la tabla hash.
  */
 typedef struct {
-  void* clave;
-  void* dato;
+    void* clave;
+    void* dato;
 } CasillaHash;
 
 /**
  * Estructura principal que representa la tabla hash.
  */
 typedef struct {
-  CasillaHash* tabla;
-  unsigned numElems;
-  unsigned capacidad;
-  FuncionHash hash;
+    CasillaHash* tabla;
+    unsigned numElems;
+    unsigned capacidad;
+    FuncionHash hash;
+    FuncionIgualdad igualdad;
 } TablaHash;
 
 /**
  * Crea una nueva tabla Hash vacía, con la capacidad dada.
  */
-TablaHash* tablahash_crear(unsigned capacidad, FuncionHash fun);
+TablaHash* tablahash_crear(unsigned capacidad, FuncionHash fun, FuncionIgualdad igualdad);
 
 /**
  * Inserta el dato en la tabla, asociado a la clave dada.
